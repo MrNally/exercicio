@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PONTOS TURÍSTICOS ALEGRE</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="barra_cabecalho" style="text-align: center;">
+            <h1>Pontos Turísticos em Alegre-ES</h1>
+            <a href="#lugar1">Igreja Matriz Nossa Senhora da Penha</a>
+            <a href="#lugar2">Parque Estadual da Cachoeira da Fumaça</a>
+            <a href="#lugar3">Antiga Estação Ferroviária</a>
+            <a href="#lugar4">Casarão em Alegre</a>
+            <a href="#lugar5">UFES Campus Alegre</a>
+        </div>
+    </header>
+
+    <section class="locais">
+        <article id="lugar1">
+            <h3 style="text-align: center;">Igreja Matriz Nossa Senhora da Penha</h3>
+
+            <div class="w3-content" style="max-width:1200px">
+              <img class="mySlides1" src="assets/local_1/igreja1.jpg" alt="Foto Igreja Alegre" title="Igreja Matriz Nossa Senhora da Penha" style="width:100%;max-height: 600px">
+              <img class="mySlides1" src="assets/local_1/igreja2.jpg" alt="Foto Igreja Alegre" title="Igreja Matriz Nossa Senhora da Penha" style="width:100%;max-height: 600px;display:none">
+              <img class="mySlides1" src="assets/local_1/igreja3.jpg" alt="Foto Igreja Alegre" title="Igreja Matriz Nossa Senhora da Penha" style="width:100%;max-height: 600px;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_1/igreja1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv1(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_1/igreja2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv1(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_1/igreja3.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv1(3)">
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function currentDiv1(n) {
+                showDivs1(slideIndex = n);
+              }
+              
+              function showDivs1(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides1");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-opacity-off";
+              }
+            </script>
+            
+            <div style="max-width: 1200px; margin: 0 auto;">
+              <p>
+                A capela Mor de Alegre começou a ser construída em barro e madeira no ano de 1851, por iniciativa dos primeiros exploradores da região. Oficialmente, as terras do patrimônio de Alegre ficaram sobre responsabilidade da igreja com a condição de que esta doaria as terras à Nossa Senhora da Penha. Em 1868 o corpo da igreja foi edificado e a Capela Mor reparada. Novas ampliações foram realizadas entre 1914 e 1916 e também entre 1953 e 1968. Todas essas reformas resultaram num estilo barroco-gótico. A igreja de Nossa Senhora da Penha possui ainda magníficos vitrais retratando a vida de cristo e pinturas do Indiano Diwali.
+              </p>
+              <a href="https://www.instagram.com/senhoradapenha.alegre/" target="_blank">Instagram da Igreja</a>
+            </div>
+            
+        </article>
+
+        <article id="lugar2">
+            <h3 style="text-align: center;">Parque Estadual da Cachoeira da Fumaça</h3>
+
+			      <div class="w3-content" style="max-width:1200px">
+              <img class="mySlides2" src="assets/local_2/cachoeira1.jpg" alt="Foto Cachoeira Alegre" title="Cachoeira da fumaça Alegre" style="width:100%;max-height: 600px">
+              <img class="mySlides2" src="assets/local_2/cachoeira2.jpg" alt="Foto Cachoeira Alegre" title="Cachoeira da fumaça Alegre" style="width:100%;max-height: 600px;display:none">
+              <img class="mySlides2" src="assets/local_2/cachoeira3.jpg" alt="Foto Cachoeira Alegre" title="Cachoeira da fumaça Alegre" style="width:100%;max-height: 600px;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_2/cachoeira1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv2(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_2/cachoeira2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv2(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_2/cachoeira3.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv2(3)">
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function currentDiv2(n) {
+                showDivs2(slideIndex = n);
+              }
+              
+              function showDivs2(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides2");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-opacity-off";
+              }
+            </script>  
+
+            <div style="max-width: 1200px; margin: 0 auto;">
+              <p>
+                O Parque Estadual da Cachoeira da Fumaça foi criado através do Decreto nº 2.791-ES (24 de agosto de 1984) e complementado através do Decreto nº 4.568-E (21 de setembro de 1990), quando então o Governo do Estado, atendendo uma demanda dos moradores dos municípios de Alegre, Guaçuí e Castelo e de outros Estados da Federação, desapropriou uma área de 27 ha, coberta basicamente de pastagem, mas que continha em seu interior a cachoeira do rio Braço Norte Direito ou Cachoeira da Fumaça, que atraía milhares de visitantes devido à sua grande beleza cênica.
+              </p>
+              <p>
+                A sua cobertura original é do tipo Floresta Estacional Semidecidual, que, ao longo dos anos, foi sendo recomposta, com plantios de essências nativas/frutíferas. Apesar de suas dimensões implicarem em uma fauna reduzida, observou-se, com o replantio, o retorno de aves e pássaros como siriema, beija-flor, rolinha, bem-te-vi, gavião, jurutí, dentre outros.
+              </p>	
+              <p>
+                O rio Braço Norte Direito além de contribuir com a beleza cênica do local, através da Cachoeira da Fumaça com seus 140 metros de queda, é um afluente do rio Itapemirim, abastecendo vários centros urbanos.
+              </p>
+              <a href="https://iema.es.gov.br/PECF" target="_blank">Site Parque Cachoeira da Fumaça</a>
+            </div>
+        </article>
+
+        <article id="lugar3">
+            <h3 style="text-align: center;">Antiga Estação Ferroviária</h3>
+
+            <div class="w3-content" style="max-width:1200px">
+              <img class="mySlides3" src="assets/local_3/estacao1.jpg" alt="Foto Estacao Rodoviaria Alegre" title="Antiga Estação Ferroviária" style="width:100%;max-height: 600px">
+              <img class="mySlides3" src="assets/local_3/estacao2.jpg" alt="Foto Estacao Rodoviaria Alegre" title="Antiga Estação Ferroviária" style="width:100%;max-height: 600px;display:none">
+              <img class="mySlides3" src="assets/local_3/estacao3.jpg" alt="Foto Estacao Rodoviaria Alegre" title="Antiga Estação Ferroviária" style="width:100%;max-height: 600px;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_3/estacao1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv3(1)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_3/estacao2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv3(2)">
+                </div>
+                <div class="w3-col s4">
+                  <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_3/estacao3.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv3(3)">
+                </div>
+              </div>
+            </div>
+
+            <script>
+              function currentDiv3(n) {
+                showDivs3(slideIndex = n);
+              }
+              
+              function showDivs3(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides3");
+                var dots = document.getElementsByClassName("demo");
+                if (n > x.length) {slideIndex = 1}
+                if (n < 1) {slideIndex = x.length}
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+                }
+                x[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " w3-opacity-off";
+              }
+            </script>  
+
+            <div style="max-width: 1200px; margin: 0 auto;">
+              <p>
+                A edificação faz parte da história da estrada de ferro que cortava o município de Alegre, transportando passageiros e cargas. Era local de embarque e desembarque, além de ser ponto de encontro de moradores locais.
+              </p>
+              <p>
+                Traz a inscrição ALEGRE em sua lateral e a cobertura frontal é sustentada por estrutura de ferro, original da construção em torno da década de 1920.
+              </p>
+              <a href="https://goo.gl/maps/ViV71Qy1GfQKB7LC9" target="_blank">Como chegar na Antiga Ferroviária</a>
+            </div>
+        </article>
+
+        <article id="lugar4">
+          <h3 style="text-align: center;">Casarão em Alegre</h3>
+
+          <div class="w3-content" style="max-width:1200px">
+            <img class="mySlides4" src="assets/local_4/casarao1.jpg" alt="Foto Casarao Alegre" title="Casarao em Alegre" style="width:100%;max-height: 600px">
+            <img class="mySlides4" src="assets/local_4/casarao2.jpg" alt="Foto Casarao Alegre" title="Casarao em Alegre" style="width:100%;max-height: 600px;display:none">
+            <img class="mySlides4" src="assets/local_4/casarao3.png" alt="Foto Casarao Alegre" title="Casarao em Alegre" style="width:100%;max-height: 600px;display:none">
+          
+            <div class="w3-row-padding w3-section">
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_4/casarao1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv4(1)">
+              </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_4/casarao2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv4(2)">
+              </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_4/casarao3.png" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv4(3)">
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function currentDiv4(n) {
+              showDivs4(slideIndex = n);
+            }
+            
+            function showDivs4(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides4");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+              }
+              x[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " w3-opacity-off";
+            }
+          </script> 
+
+          <div style="max-width: 1200px; margin: 0 auto;">
+            <p>
+              Casarão Sorveteria & Cafeteria oferece Sorvetes e Açaí Premium de alta qualidade, e também Cafés com grãos Especiais do Caparaó!
+            </p>
+            <a href="https://www.instagram.com/casaraosorveteriaecafeteria/" target="_blank">Instagram do Casarão</a>
+          </div>
+        </article>
+
+        <article id="lugar5">
+          <h3 style="text-align: center;">UFES Campus Alegre</h3>
+
+          <div class="w3-content" style="max-width:1200px">
+            <img class="mySlides5" src="assets/local_5/ufes1.jpg" alt="Foto Ufes Alegre" title="UFES Campus Alegre" style="width:100%;max-height: 600px">
+            <img class="mySlides5" src="assets/local_5/ufes2.jpg" alt="Foto Ufes Alegre" title="UFES Campus Alegre" style="width:100%;max-height: 600px;display:none">
+            <img class="mySlides5" src="assets/local_5/ufes3.jpeg" alt="Foto Ufes Alegre" title="UFES Campus Alegre" style="width:100%;max-height: 600px;display:none">
+          
+            <div class="w3-row-padding w3-section">
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_5/ufes1.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv5(1)">
+              </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_5/ufes2.jpg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv5(2)">
+              </div>
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="assets/local_5/ufes3.jpeg" style="width:100%;max-height: 200px;cursor:pointer" onclick="currentDiv5(3)">
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function currentDiv5(n) {
+              showDivs5(slideIndex = n);
+            }
+            
+            function showDivs5(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides5");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+              }
+              x[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " w3-opacity-off";
+            }
+          </script> 
+
+          <div style="max-width: 1200px; margin: 0 auto;">
+            <p>
+              O Campus de Alegre da Universidade Federal do Espírito Santo está localizado na região sul do Espírito Santo e oferta 17 cursos de graduação, oito cursos de mestrado e três de doutorado.
+            </p>
+            <p>
+              Com o desmembramento do extinto Centro de Ciências Agrárias (CCA), passou a abrigar dois centros de ensino denominados Centro de Ciências Agrárias e Engenharias (CCAE) e Centro de Ciências Exatas, Naturais e da Saúde (CCENS), sendo que ambos compartilham o mesmo espaço físico, com atividades de ensino, pesquisa e extensão, em articulação com os cursos de graduação e as coordenações dos programas de pós-graduação.
+            </p>
+            <a href="https://www.ufes.br/campus-de-alegre" target="_blank">Site do Campus</a>
+          </div>
+        </article>
+    </section>
+
+    <table class="tabela" border="1">
+        <tr>
+            <th colspan="5">Alegre</th>
+        </tr>
+        <tr>
+            <td colspan="2">População estimada</th>
+            <td colspan="2">29.869 pessoas (2021)</th>
+        </tr>
+        <tr>
+            <td colspan="2">Área territorial</th>
+            <td colspan="2">756,860 km²</th>
+        </tr>
+        <tr>
+            <td colspan="2">IDH</th>
+            <td colspan="2">0,721</th>
+        </tr>
+        <tr>
+            <td colspan="2">PIB</th>
+            <td colspan="2">R$ 476.962,31</th>
+        </tr>
+        <tr>
+            <td colspan="2">PIB per capita</th>
+            <td colspan="2">R$ 15.854,35</th>
+        </tr>
+		<tr>
+			<th colspan="5">Fonte: IBGE</th>
+		</tr>
+    </table>
+
+    <div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238819.89052777024!2d-41.50603815!3d-20.7280525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbbe9d8fc381383%3A0x854718ddb73cc7f9!2sAlegre%20-%20ES%2C%2029500-000!5e0!3m2!1spt-BR!2sbr!4v1655331317490!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	  </div>
+
+
+
+
+
+    
+
+    <footer>
+        <p>&copy; Lucas Soares Silva Matias & Isabele de Lima Costa, 2022</p>
+    </footer>
+</body>
+</html>
